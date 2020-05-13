@@ -11,7 +11,7 @@ public class Player {
 	private int width;
 	private Color color;
 	boolean up, down, left, right;
-	int speed = 5;//accelerations, pariclearray for breakingm, mousefollowing
+	int speed = 5;//accelerations, particle-array for breaking, mousefollowing
 
 	public Player(int x, int y, int width, Color color) {
 		this.x = x;

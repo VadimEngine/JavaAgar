@@ -20,9 +20,7 @@ public class Game extends Canvas implements Runnable, KeyListener {
 	private Thread thread;
 
 	private int FPS;
-
 	private Player player;
-	//player x & y & zoom change on growth
 
 
 	private ArrayList<Particle> pl = new ArrayList<>();
@@ -150,12 +148,11 @@ public class Game extends Canvas implements Runnable, KeyListener {
 
 		g2d.translate(-player.getX() + getWidth() / 2, -player.getY() + getHeight() / 2);
 
-		for (int i = 0; i < 10 * getHeight(); i++) {//GAME DIMENSION, AI's, colliing percentagte of their width
+		for (int i = 0; i < 10 * getHeight(); i++) {
 			g.drawLine(0, i * getHeight() / 10, getWidth()* 10, i * getHeight() / 10);
-//			g.drawLine(i * getWidth() / 10, 0, i * getWidth() / 10, getHeight() * 10);
 		}
 
-		for (int i = 0; i < 10 * getWidth(); i++) {//GAME DIMENSION, AI's, colliing percentagte of their width
+		for (int i = 0; i < 10 * getWidth(); i++) {
 			g.drawLine(i * getWidth() / 10, 0, i * getWidth() / 10, getHeight() * 10);
 
 		}
